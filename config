@@ -67,7 +67,7 @@ for_window [class="^.*"] border pixel 6
 
 
 # auto brightness and night mode
-exec --no-startup-id ~/gammy/gammy
+exec ~/gammy/gammy
 
 # set keyboard layout switch
 #exec --no-starstup-id setxkbmap -option 'grp:lwin_toggle'
@@ -105,7 +105,7 @@ exec xrandr | grep 'HDMI-1 connected' && xrandr --output eDP-1 --auto --output H
 
 # costum workspace for spotify and whatsapp
 for_window [class="Spotify"] move to workspace 3
-for_window [class="whats-app-nativefier-d52542"] move to workspace 3
+for_window [class="whatsapp-nativefier-"] move to workspace 3
 for_window [class="TeamViewer"] move to workspace 4
 
 
