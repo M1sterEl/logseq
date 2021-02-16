@@ -1,0 +1,22 @@
+cheatsheet
+
+• + : together 
+• - : then
+
+search and replace in all lines : :%s/search/replace/g
+-- remove % the replace only in line
+
+go to previous edited file : ctlr+6 or :e#
+split previous edited file : :sbp
+
+toggling errors window : ctrl+t
+
+toggle tree view : ctrl+\
+
+comment out things:
+toggle line comment(If the topmost selected line is commented, all selected lines are uncommented and vice versa.) : \-c-space
+just adds a comment sign at the start of the line(works in visual mode) : <leader>-c-c
+Same as cc except that the commented line(s) are yanked first : <leader>-c-y
+Comments the current line from the cursor to the end of line : <leader>-c-$
+lets you add a comment at the end of line : <leader>-c-A
+removes comment signs(opposite of <leader>-c-c) : <leader>-c-u
