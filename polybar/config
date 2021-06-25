@@ -47,7 +47,7 @@ gray = #a89984
 padding = 2
 
 [bar/costbar]
-monitor = ${env:MONITOR:}
+;monitor = ${env:monitor:HDMI1}
 bottom = true
 width = 100%
 height = 27
@@ -71,9 +71,10 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = "xos4 Terminus:style=Regular:size=12.5;2"
+#font-0 = "xos4 Terminus:style=Regular:size=12.5;2"
+font-0 = fontawesome :style=Regular:size=11;2
 font-1 = fontawesome :style=Regular:size=11;2
-font-2 = "Inconsolata Nerd Font:style=Regular:size=15;3"
+font-2 = Inconsolata Nerd Font:style=Regular:size=12;3
 
 ;modules-left = bspwm i3
 ;modules-center = mpd
@@ -81,9 +82,7 @@ font-2 = "Inconsolata Nerd Font:style=Regular:size=15;3"
 
 modules-left = i3 alsa temperature cpu
 modules-center = date 
-;only for laptops
-;modules-right = battery brightness xkeyboard eth
-modules-right = xkeyboard eth
+modules-right = battery brightness xkeyboard eth
 
 tray-position = right
 tray-padding = 2
@@ -116,14 +115,14 @@ label-layout = %layout%
 [module/brightness]
 type = custom/script
 exec = ~/Programing/Scripts/brightness.sh
-format-prefix = 
+format-prefix = " "
 format-prefix-foreground = ${colors.green}
 interval = 3
 
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = ""
+format-prefix = " "
 format-prefix-foreground = ${colors.green}
 ;format-underline = #f90000
 label = %percentage:2%%
@@ -181,7 +180,7 @@ label-focused-padding = ${self.label-mode-padding}
 label-unfocused = %index%
 label-unfocused-padding = ${self.label-focused-padding}
 label-unfocused-foreground = ${colors.foreground}
-label-unfocused-background = #282828
+;label-unfocused-background = #282828
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %index%
@@ -232,7 +231,7 @@ type = internal/alsa
 inherit = module/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-format-volume-background = #282828
+;format-volume-background = #282828
 format-volume-prefix = " "
 label-volume = %percentage%%
 label-volume-foreground = ${gruvbox.gray}
@@ -240,7 +239,7 @@ label-volume-foreground = ${gruvbox.gray}
 
 format-muted-font = 2
 format-muted-prefix = " "
-format-muted-background = #282828
+;format-muted-background = #282828
 format-muted-foreground = ${colors.foreground}
 label-muted = Muted
 label-muted-background = #282828
