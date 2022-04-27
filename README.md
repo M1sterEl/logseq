@@ -5,3 +5,4 @@ a repostiry for instaelling my prefrred work environment quickly and with ease
 - oh my zsh
 - zhc powerlevel10k
 - vim
+- polybar
