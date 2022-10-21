@@ -3,6 +3,6 @@ a repostiry for instaelling my prefrred work environment quickly and with ease
 
 # prerequisites
 - oh my zsh
-- zhc powerlevel10k
+- zsh powerlevel10k
 - vim
 - polybar
