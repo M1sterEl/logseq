@@ -1,0 +1,11 @@
+{
+  "id": "logseq-git-commands",
+  "name": "Git Commands",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Your Name",
+  "description": "Push/Pull changes from a Git repository",
+  "logseq": {
+    "id": "_kr1mppqz6"
+  }
+}
